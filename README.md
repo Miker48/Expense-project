@@ -17,10 +17,10 @@ Here are the main steps for setting-up MariaDB and Grafana on Centos 8:
 
      mysql -u root -p
       >create database spending
-      > CREATE USER 'grafanaReader' IDENTIFIED BY 'mypassword';
+      >CREATE USER 'grafanaReader' IDENTIFIED BY 'mypassword';
       >GRANT SELECT ON spending.* TO 'grafanaReader';
       
- 1.4 download the sample-bill
+ 1.4 download the sample-data
  
  1.5 create table and load sample data
  

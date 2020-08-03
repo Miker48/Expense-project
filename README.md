@@ -4,27 +4,26 @@ In this project, I am going to use Grafana and MariaDB to track monthly expenses
 Here are the main steps for setting-up MariaDB and Grafana on Centos 8:
 
 <h2>1. Install / Config Mariadb</h2>
-
- 1.1 install mariadb, for CentOS 8 run
+ 1.1 download the sample-data
+ 
+ 1.2 install mariadb, for CentOS 8 run
 
     "dnf install -y mariadb"
 
- 1.2 setup / config mariadb
+ 1.3 setup / config mariadb
 
      systemctl enable --now mariadb
      mysql_secure_installation
- 1.3 create database / read only user for Grafana
+     
+ 1.3 create database and read only user for Grafana
 
      mysql -u root -p
       >create database spending
       >CREATE USER 'grafanaReader' IDENTIFIED BY 'mypassword';
       >GRANT SELECT ON spending.* TO 'grafanaReader';
-      
- 1.4 download the sample-data
+ 1.4 create table and load sample data
  
- 1.5 create table and load sample data
- 
-    mysql -uroot -ptest1234 spending <<EOF
+    mysql -uroot -pxxxxx spending <<EOF
     create table if not exists bill ( Year char(4) NOT NULL, Month char(3) NOT NULL, Name       varchar(25) NOT NULL, Amount float(10,2) NOT NULL, Paid varchar(3) NOT NULL, PRIMARY KEY (Year, Month, Name));
     load data local infile 'sample-bill' into table bill fields terminated by ':';
     EOF

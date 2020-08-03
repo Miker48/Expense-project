@@ -3,7 +3,7 @@ In this project, I am going to use Grafana and MariaDB to track monthly expenses
 
 Here are the main steps for setting-up MariaDB and Grafana on Centos 8:
 
-<h2>1. install/config mariadb</h2>
+<h2>1. Install / Config Mariadb</h2>
 
  1.1 install mariadb, for CentOS 8 run
 
@@ -30,7 +30,7 @@ Here are the main steps for setting-up MariaDB and Grafana on Centos 8:
     EOF
 
 
-<h2>2. install / setup grafana</h2>
+<h2>2. Install / Setup Grafana</h2>
 
 2.1 install grafana server, for CentOS8 run
 

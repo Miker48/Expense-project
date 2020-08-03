@@ -1,4 +1,5 @@
 In this project, I am going to use Grafana and MariaDB to track monthly expenses.
+<img src=https://github.com/Miker48/Expense-project/blob/master/demo.png>
 
 Here are the main steps for setting-up MariaDB and Grafana on Centos 8:
 

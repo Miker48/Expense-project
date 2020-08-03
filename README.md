@@ -14,10 +14,12 @@ Here are the main steps for setting-up MariaDB and Grafana on Centos 8:
       >create database spending
       > CREATE USER 'grafanaReader' IDENTIFIED BY 'mypassword';
       >GRANT SELECT ON spending.* TO 'grafanaReader';
- 1.4 create table and load sample data
+      
+ 1.4 download the sample-bill
+ 1.5 create table and load sample data
     mysql -uroot -ptest1234 spending <<EOF
     create table if not exists bill ( Year int(4) NOT NULL, Month char(3) NOT NULL, Name       varchar(25) NOT NULL, Amount float(10,2) NOT NULL, Paid varchar(3) NOT NULL, PRIMARY KEY (Year, Month, Name));
-    load data local infile '/home/michael/bills' into table bill fields terminated by ':';
+    load data local infile 'sample-bill' into table bill fields terminated by ':';
 
     EOF
 

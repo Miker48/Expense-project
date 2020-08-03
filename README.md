@@ -48,3 +48,6 @@ Here are the main steps for setting-up MariaDB and Grafana on Centos 8:
 
 2.4 import grafana dashboard 
     download Expense.json and import to Grafana dashboard
+   click "Grafana" icon on the top left ---> Home ---> Import Dashboard ---> upload .json file ---> and select the file dowbloaded above ---> click "Import"
+   
+

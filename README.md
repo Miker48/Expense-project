@@ -30,7 +30,7 @@ Here are the main steps for setting-up MariaDB and Grafana on Centos 8:
     EOF
 
 
-2. install / setup grafana
+<h2>2. install / setup grafana</h2>
 
 2.1 install grafana server, for CentOS8 run
 

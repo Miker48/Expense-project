@@ -4,31 +4,33 @@ Here are the main steps for setting-up MariaDB and Grafana on Centos 8:
 
 1.  install/config mariadb
 
- 1.1 install mariadb
-     for centos 8 run "dnf install -y mariadb-server"
+ 1.1 install mariadb, for centos 8 run
+
+    "dnf install -y mariadb"
+
  1.2 setup / config mariadb
+
      systemctl enable --now mariadb
      mysql_secure_installation
  1.3 create database / read only user for Grafana
-      mysql -u root -p
+
+     mysql -u root -p
       >create database spending
       > CREATE USER 'grafanaReader' IDENTIFIED BY 'mypassword';
       >GRANT SELECT ON spending.* TO 'grafanaReader';
       
  1.4 download the sample-bill
  1.5 create table and load sample data
+ 
     mysql -uroot -ptest1234 spending <<EOF
     create table if not exists bill ( Year int(4) NOT NULL, Month char(3) NOT NULL, Name       varchar(25) NOT NULL, Amount float(10,2) NOT NULL, Paid varchar(3) NOT NULL, PRIMARY KEY (Year, Month, Name));
     load data local infile 'sample-bill' into table bill fields terminated by ':';
-
     EOF
 
 
 2. install / setup grafana
 
-2.1 install grafana server
-
-    for centos 8 run
+2.1 install grafana server, for CenTOS8 run
 
     "dnf install grafana"
 
@@ -47,7 +49,9 @@ Here are the main steps for setting-up MariaDB and Grafana on Centos 8:
     "Host" "Database" "User" "Password" ---> Click "Save & Test"
 
 2.4 import grafana dashboard 
+
     download Expense.json and import to Grafana dashboard
-   click "Grafana" icon on the top left ---> Home ---> Import Dashboard ---> upload .json file ---> and select the file dowbloaded above ---> click "Import"
+
+    click "Grafana" icon on the top left ---> Home ---> Import Dashboard ---> upload .json file ---> and select the file dowbloaded above ---> click "Import"
    
 

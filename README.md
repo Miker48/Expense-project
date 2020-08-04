@@ -3,7 +3,7 @@ In this project, I am going to use cutting edge software, Grafana and MariaDB to
 <img src=https://github.com/Miker48/Expense-project/blob/master/demo.png>
 
 <h2> Architecture </h2>
-MariaDB with just one database: "spending",  and just one table, "bill". And just five columes in the table of "bill": Year, Month, Name, AMount, Paid.
+MariaDB with just one database: "spending",  and one table, "bill". And just five columes in the table of "bill": Year, Month, Name, AMount, Paid.
 
 And then we setup datasource in Grafana to use the above DB, and so some mySQL queries to generate the reports.
  

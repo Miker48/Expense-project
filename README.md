@@ -1,17 +1,20 @@
-To generate monthly expense graphic report,normally people will use LAMP stack, and write a lot of code to query database, and daw the graphical report.
+To generate monthly expense graphic report, normally people will use LAMP stack, and write a lot of code in either java, python, PHP etc to query database, and draw the graphical report.
 In this project, I am going to use cutting edge software, Grafana and MariaDB to make it very easy.
 <img src=https://github.com/Miker48/Expense-project/blob/master/demo.png>
 
 <h2> Architecture </h2>
+MariaDB with just one database: "spending",  and just one table, "bill".
+And just five columes in the table of "bill": Year, Month, Name, AMount, Paid.
 
- ______________________                _____________________
-| MariaDB 
-| with just one DB
-| and one table.
-|
-|
-|
-|_____________________                _____________________
+And then we setup datasource in Grafana to use the above DB, and so some mySQL queries to generate the reports.
+In my dashboard, I have 3 variables: Year, Month, and Name, which we can select to do some speific queries.
+
+and the dashboard has 3 rows:
+
+Row 1 is for monthly spending, which has 3  columes: total month spending, month spending pie chart, and copraison with same month of last year.
+Row 2 is for yealy spending, which also has 3 columns: total yearly spending, yealy spedning pie chart, and copraison with last year.
+Row 3 is for spending of each item in the "Name" field,  which has 3 columes: total yealy spening of the item we select from the very top, monthly spending of selected item, and and copraison with same month of last year.
+
 
 Here are the main steps for setting-up MariaDB and Grafana on Centos 8:
 

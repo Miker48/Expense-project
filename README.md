@@ -1,4 +1,4 @@
-To generate monthly expense graphic report, normally people will use LAMP stack, and write a lot of code in either java, python, PHP etc to query database, and draw the graphical report.
+To generate monthly expense graphic report, normally people will use LAMP stack, and write a lot of codes in either java, python, PHP, Perl etc to query database, and draw the graphical report.
 In this project, I am going to use cutting edge softwares, Grafana and MariaDB to make it very simple and easy.
 <img src=https://github.com/Miker48/Expense-project/blob/master/demo.png>
 

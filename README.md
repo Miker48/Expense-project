@@ -1,5 +1,17 @@
-In this project, I am going to use Grafana and MariaDB to track monthly expenses.
+To generate monthly expense graphic report,normally people will use LAMP stack, and write a lot of code to query database, and daw the graphical report.
+In this project, I am going to use cutting edge software, Grafana and MariaDB to make it very easy.
 <img src=https://github.com/Miker48/Expense-project/blob/master/demo.png>
+
+<h2> Architecture </h2>
+
+ ______________________                _____________________
+| MariaDB 
+| with just one DB
+| and one table.
+|
+|
+|
+|_____________________                _____________________
 
 Here are the main steps for setting-up MariaDB and Grafana on Centos 8:
 

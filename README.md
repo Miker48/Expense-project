@@ -15,6 +15,7 @@ Row 1 is for monthly spending, which has 3  columes: total month spending, month
 Row 2 is for yealy spending, which also has 3 columns: total yearly spending, yealy spedning pie chart, and copraison with last year.
 Row 3 is for spending of each item in the "Name" field,  which has 3 columes: total yealy spening of the item we select from the very top, monthly spending of selected item, and and copraison with same month of last year.
 
+I have exported my dashboard and uploaded as "expense.json" above, and also uploaded same data.
 
 Here are the main steps for setting-up MariaDB and Grafana on Centos 8:
 
@@ -50,9 +51,10 @@ Here are the main steps for setting-up MariaDB and Grafana on Centos 8:
 
 <h2>2. Install / Setup Grafana</h2>
 
-2.1 install grafana server, for CentOS8 run
+2.1 install grafana server and pie chart plugin, for CentOS8 run the folowing commands as user root
 
-    "dnf install grafana"
+    dnf install grafana
+    grafana-cli plugins install grafana-piechart-panel
 
 2.2 enable / start grafana server
 

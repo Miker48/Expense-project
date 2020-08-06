@@ -1,11 +1,11 @@
-To generate monthly expense graphic report, normally people will use LAMP stack, and write a lot of codes in either java, python, PHP, Perl etc to query database, and draw the graphical report.
+To generate monthly expense graphic report, normally people will use LAMP stack, and write a lot of codes in either java, python, PHP, or Perl etc to query database, and draw the graphical report.
 In this project, I am going to use cutting edge softwares, Grafana and MariaDB to make it very simple and easy.
 <img src=https://github.com/Miker48/Expense-project/blob/master/demo.png>
 
 <h2> Architecture </h2>
-MariaDB with just one database: "spending",  and one table, "bill". And just five columes in the table of "bill": Year, Month, Name, AMount, Paid.
+MariaDB with just one database: "spending",  and one table, "bill". And just five columes in the table of "bill": Year, Month, Name, Amount, Paid.
 
-And then we setup datasource in Grafana to use the above DB, and so some mySQL queries to generate the reports.
+And then we setup datasource in Grafana to use the above DB, and so some MySQL queries to generate the reports.
  
 In my dashboard, I have 3 variables: Year, Month, and Name, which can be selected to do some speific queries.
 

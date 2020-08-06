@@ -7,7 +7,7 @@ MariaDB with just one database: "spending",  and one table, "bill". And just fiv
 
 And then we setup datasource in Grafana to use the above DB, and so some mySQL queries to generate the reports.
  
-In my dashboard, I have 3 variables: Year, Month, and Name, which we can select to do some speific queries.
+In my dashboard, I have 3 variables: Year, Month, and Name, which can be selected to do some speific queries.
 
 and the dashboard has 3 rows:
 
@@ -17,7 +17,7 @@ Row 2 is for yealy spending, which also has 3 columns: total yearly spending, ye
 
 Row 3 is for spending of each item in the "Name" field,  which has 3 columes: total yealy spening of the item we select from the very top, monthly spending of selected item, and and comparison with same month of last year.
 
-I have exported my dashboard and uploaded as "Expense.json" above, and also uploaded same-data.
+I have exported my dashboard and uploaded as "Expense.json" above, and also uploaded sample-data.
 
 Here are the main steps for setting-up MariaDB and Grafana on Centos 8:
 

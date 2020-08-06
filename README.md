@@ -12,10 +12,12 @@ In my dashboard, I have 3 variables: Year, Month, and Name, which we can select 
 and the dashboard has 3 rows:
 
 Row 1 is for monthly spending, which has 3  columes: total month spending, month spending pie chart, and copraison with same month of last year.
+
 Row 2 is for yealy spending, which also has 3 columns: total yearly spending, yealy spedning pie chart, and copraison with last year.
+
 Row 3 is for spending of each item in the "Name" field,  which has 3 columes: total yealy spening of the item we select from the very top, monthly spending of selected item, and and copraison with same month of last year.
 
-I have exported my dashboard and uploaded as "expense.json" above, and also uploaded same data.
+I have exported my dashboard and uploaded as "Expense.json" above, and also uploaded same-data.
 
 Here are the main steps for setting-up MariaDB and Grafana on Centos 8:
 

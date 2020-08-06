@@ -5,7 +5,7 @@ In this project, I am going to use cutting edge softwares, Grafana and MariaDB t
 <h2> Architecture </h2>
 MariaDB with just one database: "spending",  and one table, "bill". And just five columes in the table of "bill": Year, Month, Name, Amount, Paid.
 
-And then we setup datasource in Grafana to use the above DB, and so some MySQL queries to generate the reports.
+And then we setup datasource in Grafana to use the above DB, and do some MySQL queries to generate the reports.
  
 In my dashboard, I have 3 variables: Year, Month, and Name, which can be selected to do some speific queries.
 

@@ -13,7 +13,7 @@ and the dashboard has 3 rows:
 
 Row 1 is for monthly spending for the selected "Month", which has 3  columes: total month spending, month spending pie chart, and comparison with same month of last year.
 
-Row 2 is for yealy spending for the selected "year", which also has 3 columns: total yearly spending, yealy spedning pie chart, and comparison with last year.
+Row 2 is for yealy spending for the selected "Year", which also has 3 columns: total yearly spending, yealy spedning pie chart, and comparison with last year.
 
 Row 3 is for spending of the selected item in the "Name" field,  which has 3 columes too: total yealy spening of the item we select from the very top, monthly spending of selected item, and and comparison with same month of last year.
 

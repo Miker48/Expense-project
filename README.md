@@ -1,23 +1,24 @@
-Normally when people want to generate monthly expense graphic reports, they will use LAMP stack and write large amounts of code in either java, python, PHP, or Perl etc to query the database and draw the graphical reports.
-In this project, I am going to use cutting edge softwares, Grafana and MariaDB to make the process simpler and easier.
+A common way to generate monthly expense graphic reports is by using LAMP stack and writing large amounts of code in either java, python, PHP, or Perl etc to query the database and to draw the graphical reports.
+In this project, I will be using cutting-edge softwares, Grafana and MariaDB, to make the process simpler and easier.
+Here is a screenshot of expense report dashboard.
 <img src=https://github.com/Miker48/Expense-project/blob/master/demo.png>
 
 <h2> Architecture </h2>
-MariaDB with just one database: "spending", and one table: "bill", and just five columns in the table of "bill": Year, Month, Name, Amount, Paid.
+We will use MariaDB to create just one database: "spending", one table: "bill", and five columns for the table "bill": "Year", "Month", "Name", "Amount", "Paid".
 
-And then we setup datasource in Grafana to use the above DB, and do some MySQL queries to generate the reports.
+Next we will setup the datasource in Grafana to use the DB above and create MySQL queries to generate the reports.
  
-In my dashboard, I have 3 variables: Year, Month, and Name, which can be selected to do some speific queries.
+In my dashboard, I defined three variables: Year, Month, and Name, which can be selected to for some speific queries.
 
-and the dashboard has 3 rows:
+The dashboard will have three rows:
 
-Row 1 is for monthly spending for the selected "Month", which has 3  columes: total month spending, month spending pie chart, and comparison with same month of last year.
+Row 1 is for the monthly spending for the selected "Month", and will be consist of three columns: the total monthly spending, the monthly spending pie chart, and a graphical comparison of the selected "Month" with the previous year's "Month".
 
-Row 2 is for yealy spending for the selected "Year", which also has 3 columns: total yearly spending, yealy spedning pie chart, and comparison with last year.
+Row 2 is for the yearly spending for the selected "Year", and will also consist of three columns: the total yearly spending, the yearly spending pie chart, and a comparison with last year's spending.
 
-Row 3 is for spending of the selected item in the "Name" field,  which has 3 columes too: total yealy spening of the item we select from the very top, monthly spending of selected item, and and comparison with same month of last year.
+Row 3 is for the spending of the selected item in the "Name" field,  and will yet again consist of three columns: the total yearly spending of the item selected from the top, the monthly spending of the selected item, and a comparison with data of the same month from last year.
 
-I have exported my dashboard and uploaded as "Expense.json" above, and also uploaded sample-data.
+I uploaded my dashboard as "Expense.json", which is can be found above with the sample-data.
 
 Here are the main steps for setting-up MariaDB and Grafana on Centos 8:
 

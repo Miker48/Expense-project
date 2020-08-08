@@ -28,11 +28,19 @@ Here are the main steps for setting-up MariaDB and Grafana on Centos 8:
  1.1 install mariadb, for CentOS 8 run
 
     "dnf install -y mariadb"
+    
+    for MacOS run 
+    
+    "brew install mariadb"
 
  1.2 setup / config mariadb
 
      systemctl enable --now mariadb
      mysql_secure_installation
+     
+     for macOS run
+     
+     "mysql.server start"
      
  1.3 create database and read only user for Grafana
 
@@ -58,10 +66,18 @@ Here are the main steps for setting-up MariaDB and Grafana on Centos 8:
 
     dnf install grafana
     grafana-cli plugins install grafana-piechart-panel
+    
+    for macOS run
+    
+    brew install grafana
 
-2.2 enable / start grafana server
+2.2 enable / start grafana server, for CentOS 8 run
 
     systemctl enable --now grafana-server
+    
+    for macOS run
+    
+    brew services start grafana
 
 2.3 setup data source
 

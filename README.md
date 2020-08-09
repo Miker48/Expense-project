@@ -51,6 +51,8 @@ Here are the main steps for setting-up MariaDB and Grafana on Centos 8:
      
       
  1.4 download the sample-data
+
+    curl https://raw.githubusercontent.com/Miker48/Expense-project/master/sample-data > sample-data
  
  1.5 create table and load sample data
  

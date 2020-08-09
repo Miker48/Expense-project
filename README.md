@@ -92,6 +92,7 @@ Here are the main steps for setting-up MariaDB and Grafana on Centos 8:
     change password and setup data source
     setting ---> "Data Sources" ---> "Add Data Source" ---> select "MySQL" ---> fill the following fields under "MySQL Connection", 
     "Host" "Database" "User" "Password" ---> Click "Save & Test"
+    
     <img src=https://github.com/Miker48/Expense-project/blob/master/Setup-Datasource.png>
 2.4 Download the grafana dashboard code
 

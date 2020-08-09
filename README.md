@@ -91,11 +91,11 @@ Here are the main steps for setting-up MariaDB and Grafana on Centos 8:
     setting ---> "Data Sources" ---> "Add Data Source" ---> select "MySQL" ---> fill the following fields under "MySQL Connection", 
     "Host" "Database" "User" "Password" ---> Click "Save & Test"
 
-2.3 Download the grafana dashboard code
+2.4 Download the grafana dashboard code
 
     curl https://raw.githubusercontent.com/Miker48/Expense-project/master/Expense.json > Expense.json
 
-2.4 import grafana dashboard 
+2.5 import grafana dashboard 
 
     click "Grafana" icon on the top left ---> Home ---> Import Dashboard ---> upload .json file ---> and select the file dowbloaded above ---> click "Import"
    

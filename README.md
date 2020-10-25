@@ -8,7 +8,7 @@ We will use MariaDB to create just one database: "spending", one table: "bill", 
 
 Next we will setup the datasource in Grafana to use the DB above and create MySQL queries to generate the reports.
  
-In my dashboard, I defined three variables: Year, Month, and Name, which can be selected to for some speific queries.
+In my dashboard, I defined three variables: Year, Month, and Name, which can be selected to for some specific queries.
 
 The dashboard will have three rows:
 
